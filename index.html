@@ -190,16 +190,16 @@ In conclusion, nuclear fusion is likely to occur in the foreseeable future, howe
      <h2>Conference Presentation: Nuclear Fusion: Earth's ultimate energy source</h2>
 
      <script>
-          // Array of slide image URLs
+
           var slideImages = ["Slide1.JPG", "Slide2.JPG", "Slide3.JPG", "Slide4.JPG", "Slide5.JPG"];
           var currentSlide = 0;
           
           function showSlide() {
-               document.ggetElementById('slide').src = slideImages[currentSlide];
+               document.getElementById('slide').src = slideImages[currentSlide];
           }
           
           function nextSlide() {
-               currentSlide = (currentSlide + 1) % slideImages.;ength;
+               currentSlide = (currentSlide + 1) % slideImages.length;
                showSlide();
           }
 
@@ -219,15 +219,11 @@ In conclusion, nuclear fusion is likely to occur in the foreseeable future, howe
 
      <div id="slide-container">
           <img id="slide" src="Slide1.JPG" alt="Slide 1" style="width:100%; max-width:800px;">
-          <img id="slide" src="Slide2.JPG" alt="Slide 2" style="width:100%; max-width:800px;">
-          <img id="slide" src="Slide3.JPG" alt="Slide 3" style="width:100%; max-width:800px;">
-          <img id="slide" src="Slide4.JPG" alt="Slide 4" style="width:100%; max-width:800px;">
-          <img id="slide" src="Slide5.JPG" alt="Slide 5" style="width:100%; max-width:800px;">
 
-          <div class="button-container">
+     <div class="button-container">
                <button class="button" oneclick="prevSlide()">Previous</button>
                <button class="button" onceclick="nextSlide()">Next</button>
-          </div>
+     </div>
 
           <div class="slide-number-container">
                <button class="button" oneclick="showSlideNumber(1)">1</button>
